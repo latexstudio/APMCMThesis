@@ -82,7 +82,6 @@
 \RequirePackage{ctex}
 \setmainfont{Times New Roman}
 \else
-\RequirePackage[UTF8]{ctex}
 \usepackage{newtxtext}
 \usepackage{newtxmath}
 \fi
