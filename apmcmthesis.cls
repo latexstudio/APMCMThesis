@@ -82,6 +82,7 @@
 \RequirePackage{ctex}
 \setmainfont{Times New Roman}
 \else
+\RequirePackage{cjk}
 \usepackage{newtxtext}
 \usepackage{newtxmath}
 \fi
@@ -134,7 +135,7 @@
 \setlength\parindent{2em}
 % 设置字体
 \newcommand{\team}{Team \#\ \tzmcm@tokens@baominghao}
-\usepackage{fancyhdr}
+\RequirePackage{fancyhdr}
 \pagestyle{fancy}
 
 \fancypagestyle{frontmatterstyle}{% style for frontmatter
@@ -247,32 +248,32 @@
   \global\let\and\relax
 }
 \def\@maketitle{%
-  \thispagestyle{empty}\fontsize{12pt}{\baselineskip}\selectfont%
+  \thispagestyle{empty}%\fontsize{12pt}{\baselineskip}\selectfont%
   \begin{center}%
     {\huge\bfseries \tzmcm@numberpage@string@titlea \par}%
   \end{center}
     {\linespread{1.5}\selectfont \tzmcm@commit@string@contents \par}
-    
-    \hspace*{2em}\begin{tabularx}{12.8cm}{@{}l@{}X}
+
+     \begin{tabularx}{13.8cm}{@{}l@{}X}
     \tzmcm@commit@string@problemnum &{\hspace{1em}\tzmcm@tokens@tihao\hfill}\\
     \cline{2-2}
     \end{tabularx}
 
     \medskip%
-    \hspace*{2em}\begin{tabularx}{12.8cm}{@{}l@{}X}
+     \begin{tabularx}{13.8cm}{@{}l@{}X}
     \tzmcm@commit@string@signupnum &{\hspace{1em}\tzmcm@tokens@baominghao\hfill}\\
     \cline{2-2}
     \end{tabularx}
 
     \medskip%
-    \hspace*{2em}\begin{tabularx}{12.8cm}{@{}l@{}X}
+     \begin{tabularx}{13.8cm}{@{}l@{}X}
     \tzmcm@commit@string@schoolname &{\hspace{1em}\tzmcm@tokens@schoolname\hfill}\\[-2pt]
     \cline{2-2}
     \end{tabularx}
 
     \medskip%
     % 不这样做右边难以对齐!
-    \hspace*{2em}\begin{tabularx}{12.8cm}{@{}l@{}l@{\ }X}
+     \begin{tabularx}{13.8cm}{@{}l@{}l@{\ }X}
     \tzmcm@commit@string@membername &1. &{\hspace{.5em}\tzmcm@tokens@membera\hfill} \\[-2pt]
     \cline{3-3}
     &2.& {\hspace{.5em}\tzmcm@tokens@memberb\hfill} \\[-2pt]
@@ -282,17 +283,17 @@
     \end{tabularx}
 
     \medskip%
-    \hspace*{2em}\begin{tabularx}{12.8cm}{@{}l@{}X}
+    \begin{tabularx}{13.8cm}{@{}l@{}X}
     \tzmcm@commit@string@supervisorname &{\hspace{.5em}\tzmcm@tokens@supervisor\hfill}\\[-2pt]
     \cline{2-2}
     \end{tabularx}
 	
-    （Please check the above content carefully, \textbf{fill in English}, and will not be
+    (Please check the above content carefully, \textbf{fill in English}, and will not be
 allowed to make any changes after submission. Such as fill in error, the thesis may be
-canceled qualification awards.）
+canceled qualification awards.)
 
   \null\hfill\begin{tabularx}{5.8cm}{@{}l@{}X}
-    Date： &{\hspace{.5em}\tzmcm@tokens@date\hfill}\\[-2pt]
+    Date: &{\hspace{.5em}\tzmcm@tokens@date\hfill}\\[-2pt]
     \cline{2-2}
     \end{tabularx}
 	}
@@ -340,7 +341,7 @@ canceled qualification awards.）
 %% 定义摘要环境
 \def\abstract{%
     \if@twocolumn
-    \zihao{-4} \begin{center}  \the\year\ APMCM summary sheet \end{center}%
+      \begin{center}  \the\year\ APMCM summary sheet \end{center}%
     \else
 	\newpage
 \begin{center}
@@ -353,7 +354,7 @@ Problem Chosen:& \tzmcm@tokens@tihao\\
 \end{tabularx}
 \end{center}
 \noindent\rule{\textwidth}{2pt}
-    \zihao{-4} \begin{center}  \the\year\ APMCM summary sheet \end{center}%
+    \begin{center}  \the\year\ APMCM summary sheet \end{center}%
     \fi}
 \def\endabstract{\vspace{0.6em}\par\if@twocolumn\endquotation\else\fi
     \normalsize\rm}
@@ -362,7 +363,7 @@ Problem Chosen:& \tzmcm@tokens@tihao\\
 	\renewcommand{\tzmcm@tokens@keywords}{#1}
 	\par
 	\vskip1ex
-	{\noindent\zihao{4}\bfseries\tzmcm@cap@keywordsname：}~{\tzmcm@tokens@keywords}
+	{\noindent\bfseries\tzmcm@cap@keywordsname:}~{\tzmcm@tokens@keywords}
 	}
 
 \renewenvironment{quotation}
