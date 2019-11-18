@@ -183,7 +183,7 @@
 \graphicspath{{figures/}{figure/}{pictures/}%
   {picture/}{pic/}{pics/}{image/}{images/}}
 % 图表标题
-\DeclareCaptionFont{minusfour}{\zihao{-4}}
+\DeclareCaptionFont{minusfour}{\small}
 \captionsetup[figure]{%
 	format=hang,   % 标题从第二行开始都有缩进, 应该和 justification=raggedright 的效果一样.
 	labelsep=space, % 分隔符是一个空格
