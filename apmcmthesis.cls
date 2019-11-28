@@ -82,7 +82,7 @@
 \RequirePackage{ctex}
 \setmainfont{Times New Roman}
 \else
-\RequirePackage{cjk}
+\RequirePackage{CJK}
 \usepackage{newtxtext}
 \usepackage{newtxmath}
 \fi
