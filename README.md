@@ -9,7 +9,8 @@
 大小等等. 
 
 
-APMCMThesis 模板在 overLeaf 上发布了. 大家需要的可以直接使用. (overLeaf 模板链接)[https://www.overleaf.com/latex/templates/apmcmthesis-ya-tai-shu-xue-jian-mo-latex-guan-wang-mo-ban/xbgmxpwhnndj]
+APMCMThesis 模板在 overLeaf 上发布了. 大家需要的可以直接使用. 
+(overLeaf 模板链接)[https://www.overleaf.com/latex/templates/apmcmthesis-ya-tai-shu-xue-jian-mo-latex-guan-wang-mo-ban/xbgmxpwhnndj]
 
 
 关注我们的微信公众号:
