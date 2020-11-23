@@ -345,7 +345,7 @@ canceled qualification awards.)
     \else
 	\newpage
 \begin{center}
-\begin{tabularx}{6cm}{|l|X|}
+\begin{tabularx}{8cm}{|l|X|}
 \hline%
 Team Number:&\tzmcm@tokens@baominghao\\
 \hline%

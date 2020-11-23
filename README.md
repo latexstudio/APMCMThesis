@@ -1,5 +1,5 @@
 # APMCMThesis
-亚太区数学建模 LaTeX 模板
+亚太区数学建模 LaTeX 模板 2020 更新
 
 
 旨在让大家专注于
@@ -7,11 +7,7 @@
 中提供了一些环境和命令可以让模板的使用更为方便. 同时需要注意, 使用者需要有一
 定的 `LaTeX` 的使用经验, 至少要会使用 `ctex` 宏包的一些功能, 比如调节字距或修改字体
 大小等等. 
-
-
-APMCMThesis 模板在 overLeaf 上发布了. 大家需要的可以直接使用. 
-(overLeaf 模板链接)[https://www.overleaf.com/latex/templates/apmcmthesis-ya-tai-shu-xue-jian-mo-latex-guan-wang-mo-ban/xbgmxpwhnndj]
-
+ 
 
 关注我们的微信公众号:
 
